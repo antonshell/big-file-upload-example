@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Big File Upload Example </title>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resourses/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container page-wrapper">
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="page-header">
+                <h1>
+                    Big File Upload Example
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <button type="button" class="btn btn-success" aria-label="Add file" id="add-file-btn">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add File
+            </button>
+            <button type="button" class="btn btn-info" aria-label="Start upload" id="start-upload-btn">
+                <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Start upload
+            </button>
+            <button type="button" class="btn btn-warning" aria-label="Pause upload" id="pause-upload-btn">
+                <span class="glyphicon glyphicon-pause " aria-hidden="true"></span> Pause upload
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="progress hide" id="upload-progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"   style="width: 0%">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="alert alert-success hide">
+                File successfully uploaded
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="node_modules/resumablejs/resumable.js" type="application/javascript"></script>
+<script src="node_modules/jquery/dist/jquery.min.js" type="application/javascript"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="resourses/script.js" type="application/javascript"></script>
+
+</body>
+</html>

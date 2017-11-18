@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dilab/resumable.php": "^0.1.3",
+        "monolog/monolog": "^1.17"
+    }
+}
